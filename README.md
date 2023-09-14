@@ -4,9 +4,10 @@
 
 <h3>Статусы файлов в git
 ```mermaid
-untrascked -- "git add" --> staged
-staged -- "commit" --> tracked
-staged --> modified
-tracked --> modified
-modified -- "git add" --> sataged
+graph LR;
+	untrascked -- "git add" --> staged
+	staged -- "commit" --> tracked
+	staged --> modified
+	tracked --> modified
+	modified -- "git add" --> sataged
 ```
